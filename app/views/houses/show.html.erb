@@ -1,5 +1,11 @@
 <h2> <%= @house.name %> </h2>
+<% @house.characters.each do |character|%>
+<p><%=character.name%></p>
+<p><%=character.title%></p>
+<p><%=character.location%></p>
+<a><%=image_tag character.img_url%></a>
 
+<%end%>
 <!-- <%= image_tag @house.img_url, class: "img_url" %> -->
 
 <img class="house-photo" src="<%= @house.img_url %>">

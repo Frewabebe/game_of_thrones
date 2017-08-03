@@ -17,3 +17,19 @@
 height: 200px;
 width: 150px;
 }
+
+.character-photo{
+height: 50px;
+width: 50px;
+}
+
+@font-face {
+  font-family: "thrones";
+  src: url('game_of_thrones.ttf') format("truetype");
+}
+
+body {
+    font-size: 10px;
+    font-family: "thrones";
+    src: url('game_of_thrones.ttf') format("truetype");
+}
