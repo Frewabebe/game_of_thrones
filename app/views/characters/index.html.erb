@@ -2,5 +2,6 @@
 <div class ="character">
   <% @characters.each do |character| %>
   <h2><%= character.name %></h2>
+  <img class="character-photo" src="<%= character.img_url %>">
 <% end %>
 </div>
