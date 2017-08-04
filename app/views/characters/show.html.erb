@@ -1,6 +1,11 @@
-<h2> <%= @house.name %> </h2>
-<%@house.characters.each do |character|%>
-<%=character.name%>
+<%#= link_to "Update Character", edit_house_character_path(@character.house, @character) %>
+<%#= link_to "Delete Character", house_character_path(@character.house, @character), method: :delete %>
+
+<h2 # = "better">
+ <%= @house.name %>
+ <%@house.characters.each do |character| %>
+ <%=character.name%>
+</h2>
 
 <!-- <%= image_tag @character.img_url, class: "img_url" %> -->
 <img class="house-photo" src="<%= @house.img_url %>">
